@@ -16,14 +16,14 @@
 
 ## Usage
 
-### Build image
+#### Build image
 
 ```
 cd docker-mumble
 docker build -t magicalex/mumble .
 ```
 
-### Setup
+#### Setup
 
 Run mumble with a docker-compose.yml file
 
