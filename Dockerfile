@@ -4,7 +4,7 @@ LABEL description "Murmur server" \
       tags="latest" \
       maintainer="Magicalex <magicalex@mondedie.fr>"
 
-ARG VERSION=1.3.0-rc1
+ARG VERSION=1.3.1-rc1
 ENV GID=991 UID=991
 COPY rootfs /
 
