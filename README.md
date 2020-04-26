@@ -1,6 +1,8 @@
-# docker-mumble
+# magicalex/mumble
 
-Docker image of server mumble (murmur)
+![](https://github.com/magicalex/docker-mumble/workflows/build/badge.svg?branch=master&event=push)
+[![](https://img.shields.io/docker/pulls/magicalex/mumble)](https://hub.docker.com/r/magicalex/mumble)
+[![](https://img.shields.io/docker/stars/magicalex/mumble)](https://hub.docker.com/r/magicalex/mumble)
 
 ## Features
 
@@ -18,7 +20,7 @@ Docker image of server mumble (murmur)
 
 ```
 cd docker-mumble
-docker build -t magicalex/docker-mumble .
+docker build -t magicalex/mumble .
 ```
 
 ### Setup
@@ -31,7 +33,7 @@ version: "3"
 services:
   mumble:
     restart: always
-    image: magicalex/docker-mumble
+    image: magicalex/mumble:latest
     container_name: mumble
     ports:
       - "64738:64738"
@@ -50,7 +52,7 @@ docker run -dt \
   -p 64738:64738/udp \
   -v /docker/mumble/conf:/opt/mumble/conf \
   -v /docker/mumble/data:/opt/mumble/data \
-  magicalex/docker-mumble:latest 
+  magicalex/mumble:latest
 ```
 
 ### Set a new password for 'SuperUser' account on server
