@@ -25,4 +25,4 @@ RUN apk add -U \
 
 VOLUME /opt/mumble/conf /opt/mumble/data
 EXPOSE 64738 64738/udp
-CMD ["run.sh"]
+CMD ["/usr/local/bin/startup"]
