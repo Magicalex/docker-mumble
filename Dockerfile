@@ -14,7 +14,7 @@ RUN apk add -U \
     su-exec \
   && wget https://github.com/mumble-voip/mumble/releases/download/${VERSION}/murmur-static_x86-${VERSION}.tar.bz2 \
   && wget https://github.com/mumble-voip/mumble/releases/download/${VERSION}/murmur-static_x86-${VERSION}.tar.bz2.sig \
-  && curl https://raw.githubusercontent.com/mumble-voip/mumble-gpg-signatures/master/mumble-auto-build-2019.asc | gpg --import \
+  && curl https://raw.githubusercontent.com/mumble-voip/mumble-gpg-signatures/master/mumble-auto-build-2020.asc | gpg --import \
   && gpg --verify murmur-static_x86-${VERSION}.tar.bz2.sig murmur-static_x86-${VERSION}.tar.bz2 \
   && tar -xjf murmur-static_x86-${VERSION}.tar.bz2 \
   && rm -R murmur-static_x86-${VERSION}.tar.bz2.sig murmur-static_x86-${VERSION}.tar.bz2 \
