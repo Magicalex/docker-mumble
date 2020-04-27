@@ -15,7 +15,7 @@ Github repository of mumble: https://github.com/mumble-voip/mumble
 
 ## Tag available
 
-- latest [(Dockerfile)](https://github.com/magicalex/docker-mumble/Dockerfile)
+- latest [(Dockerfile)](https://github.com/Magicalex/docker-mumble/blob/master/Dockerfile)
 
 ## Usage
 
