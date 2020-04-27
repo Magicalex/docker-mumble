@@ -4,17 +4,18 @@
 [![](https://img.shields.io/docker/pulls/magicalex/mumble)](https://hub.docker.com/r/magicalex/mumble)
 [![](https://img.shields.io/docker/stars/magicalex/mumble)](https://hub.docker.com/r/magicalex/mumble)
 
-[Github repository of mumble](https://github.com/mumble-voip/mumble)
-
 ## Features
 
-* Based on Alpine Linux
-* No **ROOT** process
-* Persitance custom configuration for murmur
+- Based on Alpine Linux
+- No **ROOT** process
+- Persitance custom configuration for murmur
+- Latest murmur version (1.3.1-rc1)
+
+Github repository of mumble: https://github.com/mumble-voip/mumble
 
 ## Tag available
 
-* latest [(Dockerfile)](https://github.com/magicalex/docker-mumble/Dockerfile)
+- latest [(Dockerfile)](https://github.com/magicalex/docker-mumble/Dockerfile)
 
 ## Usage
 
@@ -45,7 +46,9 @@ services:
       - /mnt/docker/mumble/data:/opt/mumble/data
 ```
 
-Or without docker-compose file
+run `docker-compose up -d`
+
+Or without docker-compose
 
 ```sh
 docker run -dt \
@@ -57,7 +60,7 @@ docker run -dt \
   magicalex/mumble:latest
 ```
 
-### Set a new password for 'SuperUser' account on server
+#### Set a new password for 'SuperUser' account on server
 
 ```sh
 docker exec -it mumble supw <new_password>
