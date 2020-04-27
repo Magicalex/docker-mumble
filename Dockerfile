@@ -8,7 +8,7 @@ ARG VERSION=1.3.1-rc1
 ENV GID=991 UID=991
 COPY rootfs /
 
-RUN apk add -U \
+RUN apk add --no-progress --no-cache \
     gnupg \
     curl \
     su-exec \
@@ -20,8 +20,7 @@ RUN apk add -U \
   && rm -R murmur-static_x86-${VERSION}.tar.bz2.sig murmur-static_x86-${VERSION}.tar.bz2 \
   && mv murmur-static_x86-${VERSION} /opt/mumble \
   && chmod +x /usr/local/bin/* /opt/mumble/murmur.x86 \
-  && apk del gnupg curl \
-  && rm -rf /var/cache/apk/*
+  && apk del --purge gnupg curl
 
 VOLUME /opt/mumble/conf /opt/mumble/data
 EXPOSE 64738 64738/udp
