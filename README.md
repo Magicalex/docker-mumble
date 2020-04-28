@@ -66,3 +66,7 @@ docker run -dt \
 docker exec -it mumble supw <new_password>
 docker-compose restart mumble
 ```
+
+## License
+
+Docker image [magicalex/mumble](https://hub.docker.com/r/magicalex/mumble) is released under [MIT License](https://github.com/Magicalex/docker-mumble/blob/master/LICENSE)
