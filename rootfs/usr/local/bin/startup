@@ -8,4 +8,4 @@ for folder in /etc/mumble /opt/mumble; do
   find "${folder}" ! -user "${UID}" -exec chown -h "${UID}:${GID}" {} \;
 done
 
-exec su-exec "${UID}:${GID}" /opt/mumble/murmur.x86 -fg -ini /opt/mumble/conf/config.ini
+exec su-exec "${UID}:${GID}" /usr/bin/murmurd -fg -ini /opt/mumble/conf/config.ini
