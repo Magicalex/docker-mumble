@@ -6,11 +6,11 @@
 
 ## Features
 
-- Based on Alpine Linux (3.11)
+- Based on Alpine Linux (3.12)
 - Multi-platform image: `linux/386`, `linux/amd64`, `linux/arm/v6`, `linux/arm/v7`, `linux/arm64`
 - No root process
 - Persitance custom configuration for murmur
-- murmur version (1.3.0)
+- murmur version (1.3.1)
 
 Github repository of mumble: https://github.com/mumble-voip/mumble
 
