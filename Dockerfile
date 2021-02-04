@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM alpine:3.13
 
 LABEL description "Murmur server" \
       tags="latest" \
